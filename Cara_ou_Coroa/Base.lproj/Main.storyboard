@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cara_ou_Coroa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="190" translatesAutoresizingMaskIntoConstraints="NO" id="Bl7-wj-t4B">
+                                <rect key="frame" x="46.5" y="239" width="321" height="418"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ISH-X4-Nes">
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="154"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAh-DP-3U7">
+                                        <rect key="frame" x="25" y="344" width="271" height="74"/>
+                                        <state key="normal" image="botao_jogar"/>
+                                        <connections>
+                                            <segue destination="432-WE-VJd" kind="show" identifier="enviarSorteio" id="9Xn-Mz-XRY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38014921545982361" green="0.74087709188461304" blue="0.54852771759033203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bl7-wj-t4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="flS-Aq-BSk"/>
+                            <constraint firstItem="Bl7-wj-t4B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xYN-GI-0GJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200" y="76"/>
+        </scene>
+        <!--Moeda View Controller-->
+        <scene sceneID="XkE-fK-7uF">
+            <objects>
+                <viewController id="432-WE-VJd" customClass="MoedaViewController" customModule="Cara_ou_Coroa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="35P-fY-wb7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="jF9-9x-9zm">
+                                <rect key="frame" x="83" y="224" width="248" height="259"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YFh-A6-vsx">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="153"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1s-Np-4bo">
+                                        <rect key="frame" x="0.0" y="193" width="248" height="66"/>
+                                        <state key="normal" image="botao_voltar"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="Zkc-hQ-BJJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38014921550000003" green="0.74087709189999995" blue="0.54852771759999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jF9-9x-9zm" firstAttribute="centerX" secondItem="35P-fY-wb7" secondAttribute="centerX" id="62y-NL-Pia"/>
+                            <constraint firstItem="jF9-9x-9zm" firstAttribute="centerY" secondItem="35P-fY-wb7" secondAttribute="centerY" id="ZgK-IC-XTO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mgr-Rv-GPI"/>
+                    </view>
+                    <connections>
+                        <outlet property="moeda" destination="YFh-A6-vsx" id="b6y-SM-dEL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSj-cc-iE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.6956521739131" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="botao_jogar" width="271" height="74"/>
+        <image name="botao_voltar" width="248" height="66"/>
+        <image name="logo" width="321" height="154"/>
+    </resources>
+</document>
